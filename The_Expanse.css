@@ -1,0 +1,520 @@
+/* Background Image */
+.charsheet .sheet-background {
+    background-color: hsl(0, 0%, 95%);
+    background-size: 100%;
+    border: 1px dashed rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 2px;
+    min-width: 840px;
+}
+
+/* Grid Setup */
+.charsheet .sheet-grid-container {
+    display: grid;
+    grid-gap: 5px;
+    background-color: transparent;
+    padding: 3px;
+    text-align: center;
+}
+
+.charsheet .sheet-grid-container-two {
+    grid-template-columns: auto 45%;
+}
+
+.charsheet .sheet-grid-container-six {
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.charsheet .sheet-grid-container-outline {
+    display: grid;
+    grid-gap: 0px;
+    background-color: transparent;
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.charsheet .sheet-grid-container-fade {
+    background-color: rgba(5, 77, 104, 0.02);
+    border-radius: 5px;
+    padding: none;
+}
+
+.charsheet .sheet-grid-item {
+  background-color: rgba(259, 259, 259, 0.25);
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.charsheet .sheet-item-span-left-two {
+  grid-column: 1 / 3;
+}
+
+.charsheet .sheet-item-span-left-three {
+  grid-column: 1 / 4;
+}
+
+.charsheet .sheet-item-span-left-four {
+  grid-column: 1 / 5;
+} 
+.charsheet .sheet-item-span-right-three {
+  grid-column: 4 / 7;
+}
+
+.charsheet .sheet-item-span-right-two {
+  grid-column: 5 / 7;
+}
+
+.charsheet .sheet-item-span-center-two {
+  grid-column: 3 / 5;
+}
+
+.charsheet .sheet-item-span-six {
+  grid-column: 1 / 7;
+}
+
+.charsheet .sheet-item-span-down-four {
+    grid-row: 1 / 5;
+}
+
+.charsheet .sheet-header-alpha {
+    background-color: rgba(5, 77, 104, 1);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.charsheet .sheet-header-beta {
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 1.25em;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+.charsheet .sheet-header-gamma {
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+.charsheet .sheet-header-delta {
+    background-color: rgba(5, 77, 104, 0.1);
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.charsheet .sheet-header-delta-alternate {
+    background-color: rgba(5, 77, 104, 0.1);
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 0px;
+}
+
+.charsheet .sheet-focus-item {
+  background-color: rgba(5, 77, 104, 0.1);
+  text-align: left;
+}
+
+.charsheet .sheet-ability-number {
+    float: right;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: white;
+    background: black;
+    padding: 1px;
+    border: none;
+    text-align: center;
+}
+
+.charsheet .sheet-ability-text {
+    font-size:1em;
+    font-weight: bold;
+    color: white;
+    background: black;
+    padding: 1px;
+    border: none;
+    text-align: left;
+}
+
+.charsheet .sheet-attack-text {
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    background: transparent;
+    padding: 1px;
+    border: none;
+    text-align: center;
+    width: 100%;
+}
+
+.charsheet .sheet-talent-text {
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(5, 77, 104, 1);
+    background: transparent;
+    padding: 1px;
+    border: none;
+    text-align: left;
+}
+
+.charsheet .sheet-talent-text-two {
+    float: right;
+}
+
+.charsheet .sheet-talent-text-three {
+    float: right;
+    color: rgba(5, 77, 104, 0.2);
+}
+
+.charsheet .sheet-talent-text-four {
+    text-align: center;
+}
+
+.charsheet input[type="number"].sheet-ability-number {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    width: 1.25em;
+}
+
+.charsheet input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+.charsheet .sheet-ability-tiny-text {
+    text-align: left;
+    font-size: 0.75em;
+}
+
+.charsheet .sheet-focus-text-adjust {
+    font-size: 0.9em;
+}
+
+/* Show / Hide Editing Container Styling */
+.charsheet .sheet-container-bows, .sheet-container-gunnery, .sheet-container-pistols, .sheet-container-rifles, .sheet-container-throwing,
+.sheet-container-talent, .sheet-container-bargaining, .sheet-container-deception, .sheet-container-disguise, .sheet-container-etiquette,
+.sheet-container-express, .sheet-container-gambling, .sheet-container-investigation, .sheet-container-leadership, .sheet-container-performing,
+.sheet-container-persuasion, .sheet-container-seduction, .sheet-container-running, .sheet-container-stamina, .sheet-container-swimming,
+.sheet-container-tolerance, .sheet-container-acrobatics, .sheet-container-crafting, .sheet-container-driving, .sheet-container-initiative,
+.sheet-container-piloting, .sheet-container-sleight-of-hand, .sheet-container-stealth, .sheet-container-brawling, .sheet-container-grappling,
+.sheet-container-heavy-weapons, .sheet-container-light-weapons, .sheet-container-art, .sheet-container-business, .sheet-container-cryptology,
+.sheet-container-current-affairs, .sheet-container-demolitions, .sheet-container-engineering, .sheet-container-replacement-one /* Evaluation */,
+.sheet-container-history, .sheet-container-law, .sheet-container-medicine, .sheet-container-navigation, .sheet-container-research,
+.sheet-container-science, .sheet-container-security, .sheet-container-tactics, .sheet-container-technology, .sheet-container-empathy,
+.sheet-container-hearing, .sheet-container-intuition, .sheet-container-searching, .sheet-container-seeing, .sheet-container-smelling,
+.sheet-container-survival, .sheet-container-tasting, .sheet-container-touching, .sheet-container-tracking, .sheet-container-climbing,
+.sheet-container-intimidation, .sheet-container-jumping, .sheet-container-might, .sheet-container-courage, .sheet-container-faith,
+.sheet-container-self-discipline, .sheet-container-fortune-twenty { display: none; }
+
+input.sheet-display-bows:checked ~ div.sheet-container-bows, input.sheet-display-gunnery:checked ~ div.sheet-container-gunnery, input.sheet-display-pistols:checked ~ div.sheet-container-pistols,
+input.sheet-display-rifles:checked ~ div.sheet-container-rifles, input.sheet-display-throwing:checked ~ div.sheet-container-throwing, input.sheet-display-talent:checked ~ div.sheet-container-talent,
+input.sheet-display-bargaining:checked ~ div.sheet-container-bargaining, input.sheet-display-deception:checked ~ div.sheet-container-deception, input.sheet-display-disguise:checked ~ div.sheet-container-disguise,
+input.sheet-display-etiquette:checked ~ div.sheet-container-etiquette, input.sheet-display-express:checked ~ div.sheet-container-express, input.sheet-display-gambling:checked ~ div.sheet-container-gambling,
+input.sheet-display-investigation:checked ~ div.sheet-container-investigation, input.sheet-display-leadership:checked ~ div.sheet-container-leadership, input.sheet-display-performing:checked ~ div.sheet-container-performing,
+input.sheet-display-persuasion:checked ~ div.sheet-container-persuasion, input.sheet-display-seduction:checked ~ div.sheet-container-seduction,  input.sheet-display-running:checked ~ div.sheet-container-running,
+input.sheet-display-stamina:checked ~ div.sheet-container-stamina, input.sheet-display-swimming:checked ~ div.sheet-container-swimming, input.sheet-display-tolerance:checked ~ div.sheet-container-tolerance,
+input.sheet-display-acrobatics:checked ~ div.sheet-container-acrobatics, input.sheet-display-crafting:checked ~ div.sheet-container-crafting, input.sheet-display-driving:checked ~ div.sheet-container-driving,
+input.sheet-display-initiative:checked ~ div.sheet-container-initiative, input.sheet-display-piloting:checked ~ div.sheet-container-piloting, input.sheet-display-sleight-of-hand:checked ~ div.sheet-container-sleight-of-hand,
+input.sheet-display-stealth:checked ~ div.sheet-container-stealth, input.sheet-display-brawling:checked ~ div.sheet-container-brawling, input.sheet-display-grappling:checked ~ div.sheet-container-grappling,
+input.sheet-display-heavy-weapons:checked ~ div.sheet-container-heavy-weapons, input.sheet-display-light-weapons:checked ~ div.sheet-container-light-weapons, input.sheet-display-art:checked ~ div.sheet-container-art,
+input.sheet-display-business:checked ~ div.sheet-container-business, input.sheet-display-cryptology:checked ~ div.sheet-container-cryptology, input.sheet-display-current-affairs:checked ~ div.sheet-container-current-affairs,
+input.sheet-display-demolitions:checked ~ div.sheet-container-demolitions, input.sheet-display-engineering:checked ~ div.sheet-container-engineering, input.sheet-display-replacement-one:checked ~ div.sheet-container-replacement-one,
+input.sheet-display-history:checked ~ div.sheet-container-history, input.sheet-display-law:checked ~ div.sheet-container-law, input.sheet-display-medicine:checked ~ div.sheet-container-medicine,
+input.sheet-display-navigation:checked ~ div.sheet-container-navigation, input.sheet-display-research:checked ~ div.sheet-container-research, input.sheet-display-science:checked ~ div.sheet-container-science,
+input.sheet-display-security:checked ~ div.sheet-container-security, input.sheet-display-tactics:checked ~ div.sheet-container-tactics, input.sheet-display-technology:checked ~ div.sheet-container-technology,
+input.sheet-display-empathy:checked ~ div.sheet-container-empathy, input.sheet-display-hearing:checked ~ div.sheet-container-hearing, input.sheet-display-intuition:checked ~ div.sheet-container-intuition,
+input.sheet-display-searching:checked ~ div.sheet-container-searching, input.sheet-display-seeing:checked ~ div.sheet-container-seeing, input.sheet-display-smelling:checked ~ div.sheet-container-smelling,
+input.sheet-display-survival:checked ~ div.sheet-container-survival, input.sheet-display-tasting:checked ~ div.sheet-container-tasting, input.sheet-display-touching:checked ~ div.sheet-container-touching,
+input.sheet-display-tracking:checked ~ div.sheet-container-tracking, input.sheet-display-climbing:checked ~ div.sheet-container-climbing, input.sheet-display-intimidation:checked ~ div.sheet-container-intimidation,
+input.sheet-display-jumping:checked ~ div.sheet-container-jumping, input.sheet-display-might:checked ~ div.sheet-container-might, input.sheet-display-courage:checked ~ div.sheet-container-courage,
+input.sheet-display-faith:checked ~ div.sheet-container-faith, input.sheet-display-self-discipline:checked ~ div.sheet-container-self-discipline, input.sheet-display-fortune-twenty:checked ~ div.sheet-container-fortune-twenty { display: block; }
+
+.charsheet input.sheet-display-focus {
+    display: none;
+}
+
+.charsheet input.sheet-display-talent {
+    float: right;
+    width: 100px;
+    height: 12px;
+    margin-top: -22px;
+    opacity: 0.01;
+}
+
+/*** Roll Modifier Radio/Checkbox Button Styling ***/
+input.sheet-learned-focus {
+    width: 22%;
+    height: 14px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 4px 2px 4px 0px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+
+input.sheet-learned-focus + span::before {
+    content: attr(title);
+    color: black;
+    border: solid 1px #dcdcdc;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    background: #dcdcdc;
+    width: 22%;
+    height: 14px;
+    font-size: 12px;
+    margin-left: -22%;
+    padding: 0px 0px 2px 0px;
+}
+
+input.sheet-learned-focus:checked + span::before {
+    color: #ffffff;
+    background: rgba(5, 77, 104, 1);
+    border: solid 1px rgba(5, 77, 104, 1);
+    border-radius: 5px;
+}
+
+input.sheet-condition-adjust {
+    width: 47%;
+}
+
+input.sheet-condition-adjust + span::before {
+    width: 47%;
+    margin-left: -47%;
+}
+
+/**** FORTUNE CHECKBOX STYLING ****/
+input.sheet-display-fortune {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin: 1px 1px 1px 1px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+
+input.sheet-display-fortune + span::before {
+    content: attr(title);
+    color: white;
+    border: solid 1px black;
+    text-align: center;
+    display: inline-block;
+    background: white;
+    width: 18px;
+    height: 18px;
+    box-shadow: 2px 2px black;
+    vertical-align: middle;
+    font-family: "pictos";
+    margin: 3px 3px 3px -20px;
+}
+
+input.sheet-display-fortune:checked + span::before {
+    color: #FF8C00;
+    background: #FFA500;
+}
+
+/* Buttons Buttons Buttons */
+.charsheet button[type=roll].sheet-ability {
+    background: transparent;
+    color: #ffffff;
+    font-size: 1.1em;
+    text-shadow: none;
+    box-shadow: none;
+    padding: 1px;
+    margin: 1px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.charsheet button[type=roll].sheet-focus {
+    background: transparent;
+    color: rgba(5, 77, 104, 1);
+    font-size: 1em;
+    text-shadow: none;
+    box-shadow: none;
+    padding: 1px;
+    margin: 1px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.charsheet button[type=roll].sheet-spell-roll {
+    background: transparent;
+    color: #000000;
+    font-size: 11px;
+    line-height: 13px;
+    text-shadow: none;
+    box-shadow: none;
+    padding: 1px;
+    margin: 0px 0px 0px 0px;
+    width: 30%;
+    height: 13px;
+    font-weight: normal;
+    border: 1px solid transparent;
+}
+
+.charsheet button[type=roll].sheet-ability::before, button[type=roll].sheet-focus::before, button[type=roll].sheet-spell-roll::before {
+    content: "" !important;
+}
+
+button[type=roll].sheet-ability:hover, button[type=roll].sheet-focus:hover, button[type=roll].sheet-spell-roll:hover,
+button[type=roll].sheet-ability:hover *, button[type=roll].sheet-focus:hover *, button[type=roll].sheet-spell-roll:hover *,
+button[type=roll].sheet-ability:hover input[type=text], button[type=roll].sheet-focus:hover input[type=text], button[type=roll].sheet-spell-roll:hover input[type=text],
+button[type=roll].sheet-ability:hover *, button[type=roll].sheet-focus:hover *, button[type=roll].sheet-spell-roll:hover * {
+    color: #ffa500;
+}
+
+button[type=roll] * {
+    pointer-events: none;
+}
+
+/* this sets the formatting for all repcontrol buttons */
+.charsheet .repcontrol_add,
+.charsheet .repcontrol_edit,
+.charsheet .repcontrol_del {
+    display: block;
+    background: #ffffff;
+    background: -webkit-linear-gradient(left,rgba(5, 77, 104, 0.25),rgba(5, 77, 104,0.05));
+    background: -o-linear-gradient(right,rgba(5, 77, 104, 0.25),rgba(5, 77, 104,0.05));
+    background: -moz-linear-gradient(right,rgba(5, 77, 104, 0.25),rgba(5, 77, 104,0.05));
+    border-radius: 5px;
+    color: #000000;
+    font-size: 1em;
+    height: 1.25em;
+    width: 45%;
+    font-style: italic;
+    padding: 1px;
+    border: 1px solid rgba(5, 77, 104, 0.25);
+}
+
+/* ROLL TEMPLATE STYLING */
+
+.sheet-rolltemplate-expanse .sheet-background {
+    background-image: url("https://s3.amazonaws.com/files.d20.io/images/71405655/JGbAIU6P-U62nTakJk8zyA/max.png?1547683315");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.sheet-rolltemplate-expanse .sheet-template-grid {
+    display: grid;
+    grid-gap: 5px;
+    background: transparent;
+    padding: 5px;
+    grid-template-columns: auto auto auto;
+}
+
+.sheet-rolltemplate-expanse .sheet-template-grid-item {
+    background-color: rgba(259, 259, 259, 0.25);
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+}
+
+.sheet-rolltemplate-expanse .sheet-template-orange {
+    background-color: rgba(255, 165, 0, 0.25);
+}
+
+.sheet-rolltemplate-expanse .sheet-template-blue {
+    background-color: rgba(255, 165, 0, 0.25);
+}
+
+.sheet-rolltemplate-expanse .sheet-template-span-three {
+  grid-column: 1 / 4;
+}
+
+.sheet-rolltemplate-expanse a[href^="~"] {
+    background-color: transparent;
+    padding: 0px;
+    color: black;
+    border: 0px;
+    font-weight: bold;
+}
+
+.sheet-rolltemplate-expanse a:hover {
+    color: #EC2127;
+}
+
+.sheet-rolltemplate-expanse a[href^="~"]:visited {
+    pointer-events: none;
+}
+
+.sheet-rolltemplate-expanse {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.sheet-rolltemplate-expanse .sheet-template-fake-die {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.sheet-rolltemplate-expanse .sheet-template-justify {
+    text-align: justify;
+}
+
+.sheet-rolltemplate-expanse .sheet-template-italic {
+    font-style: italic;
+}
+
+.sheet-rolltemplate-expanse .sheet-template-bold {
+    font-weight: bold;
+}
+
+.sheet-rolltemplate-expanse .sheet-template-smallest {
+    font-style: italic;
+    font-size: 0.6em;
+}
+
+.sheet-rolltemplate-expanse .sheet-template-largest {
+    font-size: 1.25em;
+}
+
+.sheet-rolltemplate-expanse .sheet-template-hr {
+    border-top: 1px solid #000000;
+    margin: 2px;
+}
+
+.sheet-rolltemplate-expanse .inlinerollresult  {
+    background-color: transparent;
+    border: none;
+}
+ 
+.sheet-rolltemplate-expanse .inlinerollresult.fullcrit {
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-expanse .inlinerollresult.fullfail {
+	color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-expanse .inlinerollresult.importantroll {
+	color: #000000;
+    border: none;
+}
